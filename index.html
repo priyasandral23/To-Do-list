@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To Do List App</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+</head>
+<body>
+    <h1><span class="heading">Achievement Agenda</span></h1>
+    <div class="input_div">
+        <input type="text" class="input" placeholder="What to do...">
+        <input type="date" class="date">
+        <select class="workType">
+            <option value="work">Work</option>
+            <option value="personal">Personal</option>
+            <option value="other">Other</option>
+        </select>
+        <select class="taskType">
+            <option value="today">Today's Task</option>
+            <option value="tomorrow">Tomorrow's Task</option>
+        </select>
+        <button class="addButton"><i class="plus">+</i></button>
+    </div>
+
+    <div class="container">
+        <div class="tasks today">
+            <h2>Today's Tasks</h2>
+        </div>
+        <div class="tasks tomorrow">
+            <h2>Tomorrow's Tasks</h2>
+        </div>
+    </div>
+
+    <div id="message" class="message"></div>
+    <div id="sparkle" class="sparkle hidden">🥳🎊🎉✨</div>
+    <audio id="celebrationSound" src="c.mp3"></audio>
+
+    <script type="text/javascript" src="script.js"></script>
+</body>
+</html>
